@@ -1,0 +1,20 @@
+# Files are ignored to minimize the compilation context
+
+# Is not required in the context of the image build.
+Dockerfile
+# Is specific to the local Docker build and does not need to be included in the image
+.dockerignore
+# Dependencies are installed during the Docker build process
+node_modules
+# Generated during npm operations and is not required in the image
+npm-debug.log
+*.log
+# During the Docker build, the application is compiled, and the resulting artifacts are 
+# copied into the image. Including the source code in the image is unnecessary,
+dist
+
+# Contain development or temporary files that are not needed in the image
+test
+db_scripts
+logs
+temp
