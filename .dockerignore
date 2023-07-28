@@ -1,0 +1,13 @@
+# Files are ignored to minimize the compilation context
+Dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+dist
+
+# Ignorar otros archivos no necesarios
+test
+db_scripts
+logs
+temp
+*.log
